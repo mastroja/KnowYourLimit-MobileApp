@@ -77,10 +77,4 @@ class DrinksDataUnitTest {
         assertTrue(budLightFound)
     }
 
-    @Test
-    fun confirmBudLight_ReturnBudLight(){
-        var drink: drinks = drinks("BudLight", "Beer", "4.9", "12oz")
-        assertEquals("BudLight", drink.toString())
-    }
-
 }
