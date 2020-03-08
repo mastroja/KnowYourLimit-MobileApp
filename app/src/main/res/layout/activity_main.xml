@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="549dp"
+        android:layout_marginTop="504dp"
         android:text="Liquor"
         android:textColor="#9D9FA0"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="429dp"
+        android:layout_marginTop="408dp"
         android:text="Mixed Drinks"
         android:textColor="#9D9FA0"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,8 +98,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
+        android:layout_width="148dp"
+        android:layout_height="61dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="336dp"
@@ -109,22 +109,22 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="448dp"
+        android:layout_marginTop="428dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@color/colorPrimaryDark" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="568dp"
+        android:layout_marginTop="524dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@color/colorPrimaryDark" />
