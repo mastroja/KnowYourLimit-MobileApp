@@ -15,3 +15,4 @@ class ExampleUnitTest {
         assertEquals(4, 2 + 2)
     }
 }
+/**I like this basic unit test to describe what future more descriptive unit tests there will be, maybe have some representing number of drinks/alc content/flo oz */
