@@ -1,6 +1,5 @@
 
 package com.example.KnowYouLimit.dao
-/*
 import com.example.KnowYouLimit.dto.drinks
 import retrofit2.Call
 import retrofit2.http.GET
@@ -13,4 +12,4 @@ interface IDrinkDAO {
 
     @GET("")
     fun getDrinks(@Query("Combined_Name") name: String) : Call<ArrayList<drinks>>
-}*/
+}

@@ -1,7 +1,6 @@
 package com.example.KnowYouLimit
 
 //This class creates an instance for you to send an HTTP request to your JSON url and get data back from it.
-/*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -20,4 +19,4 @@ object RetrofitClinetInstance {
             }
             return retrofit
         }
-}*/
+}
