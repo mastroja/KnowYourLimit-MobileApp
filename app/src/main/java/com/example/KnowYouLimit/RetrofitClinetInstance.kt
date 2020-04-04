@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClinetInstance {
     private var retrofit: Retrofit? = null
-    private val BASE_URL = "https://bottomsup-f3e22.firebaseio.com"
+    private val BASE_URL = ""
 
     val retrofitInstance : Retrofit?
         get(){
