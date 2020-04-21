@@ -18,7 +18,7 @@ import org.junit.rules.TestRule
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class DrinksDataUnitTest {
+class DrinksMockkUnitTest {
 
     @get:Rule
     var rule: TestRule = InstantTaskExecutorRule()
@@ -44,14 +44,15 @@ class DrinksDataUnitTest {
 
         //mimmick budlight data as if coming in by JSON
         var budLight = drinks("BudLight", "Beer", "4.9", "12oz")
-
-        //add to array
         allDrinks.add(budLight)
+        var wine = drinks("Cabernet", "Wine", "13", "255ml")
+        allDrinks.add(wine)
 
         //post that array to our mimmicked live data
         allDrinksLiveData.postValue(allDrinks)
 
-        every { drinkService.fetchDrinks(any<String>())} returns allDrinksLiveData
+        every { drinkService.fetchDrinks(or("BudLight", "Wine"))} returns allDrinksLiveData
+        every {drinkService.fetchDrinks(not(or("BudLight", "Wine")))} returns MutableLiveData<ArrayList<drinks>>()
 
         mvm.drinksService = drinkService
     }
@@ -75,6 +76,23 @@ class DrinksDataUnitTest {
         }
 
         assertTrue(budLightFound)
+    }
+
+    @Test
+    fun searchForGarbage_ReturnsNothing(){
+        givenAFeedOfMockkDrinkDataAreAvailable()
+        whenISearchForGarbage()
+        thenIGetZeroResults()
+    }
+
+    private fun whenISearchForGarbage() {
+        mvm.fetchDrinks("asdfjkl")
+    }
+
+    private fun thenIGetZeroResults() {
+        mvm.drinks.observeForever{
+            assertEquals(0, it.size)
+        }
     }
 
 }
