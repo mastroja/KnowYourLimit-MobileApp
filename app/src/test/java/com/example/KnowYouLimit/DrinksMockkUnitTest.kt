@@ -4,7 +4,6 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import com.example.KnowYouLimit.dto.drinks
 import com.example.KnowYouLimit.service.DrinksService
-import com.example.KnowYouLimit.ui.main.MainViewModel
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test
