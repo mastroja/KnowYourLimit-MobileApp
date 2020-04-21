@@ -38,6 +38,6 @@ The app will have 3 categories of drinks (Beer, Liquor, and Mixed Drinks) Each w
 
 -Add feature so user can manually enter a new drink
 
--Add 'Intoxication' notification and feature to update 'Intoxication Meter' based on users input  &#x2713;
+-Add 'Intoxication' notification and feature to update 'Intoxication Meter' based on users input
 
 
