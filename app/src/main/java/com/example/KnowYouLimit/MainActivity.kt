@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LiquorActivity::class.java)
             startActivity(intent)
         }
+        val addDrinkBtn = findViewById<Button>(R.id.addDrinkBtn)
+        addDrinkBtn.setOnClickListener {
+            val intent = Intent(this, AddDrinkActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
