@@ -14,14 +14,30 @@ The app will have 3 categories of drinks (Beer, Liquor, and Mixed Drinks) Each w
 
 # Goals for Sprint 2
 
--Merge suggestions from code review 1
+-Merge suggestions from code review 1 &#x2713;
 
--Finish UI design
+-Finish UI design &#x2713;
 
--Add new activities (i.e. Beer, Mixed Drink, Liquor, and Add Drink activities)
+-Add new activities (i.e. Beer, Mixed Drink, Liquor, and Add Drink activities) &#x2713;
 
--Finish DTO and service stub setup
+-Finish DTO and service stub setup &#x2713;
 
--Add 'Intoxication Meter'
+-Add 'Intoxication Meter' &#x2713;
 
 -Setup user feedback/notifications
+
+# Goals for Final 
+
+-Finish UI &#x2713;
+
+-Add all other activities and their layouts &#x2713;
+
+-Complete page navigation &#x2713;
+
+-Finish DTO and DAO
+
+-Add feature so user can manually enter a new drink
+
+-Add 'Intoxication' notification and feature to update 'Intoxication Meter' based on users input
+
+
