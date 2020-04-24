@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
     fun onRadioButtonClicked(view: View) {if (view is RadioButton) {
         // Is the button now checked?
         val checked = view.isChecked

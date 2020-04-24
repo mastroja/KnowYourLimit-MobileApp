@@ -17,4 +17,7 @@
     <item name="popupOverlay" type="id" />
     <item name="popupArea" type="id" />
     <item name="popupTxt" type="id" />
+    <item name="beer_list_title" type="id" />
+    <item name="beer_list_detail" type="id" />
+    <item name="beer_list_thumbnail" type="id" />
 </resources>

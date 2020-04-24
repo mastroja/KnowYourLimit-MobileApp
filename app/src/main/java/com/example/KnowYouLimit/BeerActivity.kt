@@ -26,29 +26,52 @@ class BeerActivity : AppCompatActivity() {
         var stella = drinkDTO("Stella Artois", "beer", "5.2%", "12oz")
         var yuengling = drinkDTO("Yuengling", "beer", "4.5%", "12oz")
 
-        var beerArray = arrayOf(budlight, budlightPlat, coorLight, hamms, heineken, michelob, millerHighLife, rollingRock, stella, yuengling)
+        var beerArray = arrayOf(
+            budlight,
+            budlightPlat,
+            coorLight,
+            hamms,
+            heineken,
+            michelob,
+            millerHighLife,
+            rollingRock,
+            stella,
+            yuengling
+        )
 
-        val adapter = ArrayAdapter(this,
-            R.layout.listview_item, beerArray)
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.listview_item, beerArray
+        )
 
-        val listView:ListView = findViewById(beerListView)
+        val listView: ListView = findViewById(beerListView)
         listView.adapter = adapter
 
-//        listView.onItemClickListener =
-//            AdapterView.OnItemClickListener { parent, view, position, id ->
-//                // value of item that is clicked
-//                val itemValue = listView.getItemAtPosition(position) as String
-//
-//                // Toast the values
-//                Toast.makeText(applicationContext,
-//                    "Drink added", Toast.LENGTH_LONG)
-//                    .show()
-//            }
+        listView.onItemClickListener =
+            AdapterView.OnItemClickListener { parent, view, position, id ->
 
-        val doneBtn = findViewById<Button>(R.id.doneBtn)
-        doneBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+                fun onItemClick(
+                    parent: AdapterView<*>, view: View,
+                    position: Int, id: Long
+                ) {
+
+                    // value of item that is clicked
+                    val itemValue = listView.getItemAtPosition(position) as String
+
+
+                }
+                // Toast the values
+
+
+                Toast.makeText(applicationContext,
+                    "Drink added", Toast.LENGTH_LONG)
+                    .show()
+
+                val doneBtn = findViewById<Button>(R.id.doneBtn)
+                doneBtn.setOnClickListener {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }
     }
 }
