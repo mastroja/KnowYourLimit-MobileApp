@@ -7,6 +7,9 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import com.example.KnowYouLimit.R.id.beerListView
+import android.app.AlertDialog.Builder
+import android.content.DialogInterface
+import androidx.appcompat.app.AlertDialog
 
 class AddDrinkActivity : AppCompatActivity() {
 
@@ -19,6 +22,30 @@ class AddDrinkActivity : AppCompatActivity() {
         doneBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+
+                val dialogBuilder = AlertDialog.Builder(this)
+
+                        val listItems = arrayOf("1","2","3")
+                        val mbuilder =AlertDialog.Builder(this)
+                        mbuilder.setTitle("How Intoxicated are you?")
+                        mbuilder.setSingleChoiceItems(listItems, -1) {dialogInterface, i ->
+
+                            dialogInterface.dismiss()
+                        }
+                        // neutral cancel button
+                        mbuilder.setNeutralButton("Cancel"){dialog,which ->
+                           dialog.cancel()
+                        }
+                        val mDialog =mbuilder.create()
+                        mDialog.show()
+//
+                    }
+
+
+
+
+
+
         }
     }
-}
+
