@@ -38,7 +38,7 @@ class AddDrinkActivity : AppCompatActivity() {
                         }
                         val mDialog =mbuilder.create()
                         mDialog.show()
-//
+////
                     }
 
 
