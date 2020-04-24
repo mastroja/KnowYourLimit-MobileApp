@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.RadioButton
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,131 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-//        val overlay = findViewById<ImageView>(R.id.popupOverlay)
-//        val area = findViewById<ImageView>(R.id.popupArea)
-//        val text = findViewById<TextView>(R.id.popupTxt)
-//        val a10 = findViewById<ImageView>(R.id.arrow10)
-//        val a9 = findViewById<ImageView>(R.id.arrow9)
-//        val a8 = findViewById<ImageView>(R.id.arrow8)
-//        val a7 = findViewById<ImageView>(R.id.arrow7)
-//        val a6 = findViewById<ImageView>(R.id.arrow6)
-//        val a5 = findViewById<ImageView>(R.id.arrow5)
-//        val a4 = findViewById<ImageView>(R.id.arrow4)
-//        val a3 = findViewById<ImageView>(R.id.arrow3)
-//        val a2 = findViewById<ImageView>(R.id.arrow2)
-//        val a1 = findViewById<ImageView>(R.id.arrow1)
-//
-//        b1.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b2.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b3.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b4.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b5.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b6.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b7.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b8.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b9.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        b10.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
-//        overlay.setOnClickListener {
-//            fun showHide(view: View) {
-//                view.visibility = if (view.visibility == View.VISIBLE) {
-//                    View.INVISIBLE
-//                } else {
-//                    View.VISIBLE
-//                }
-//
-//            }
-//        }
 
             val beerBtn = findViewById<Button>(R.id.beerBtn)
             beerBtn.setOnClickListener {
