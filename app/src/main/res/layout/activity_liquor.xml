@@ -83,7 +83,7 @@
     <ImageView
         android:id="@+id/liquorBox"
         android:layout_width="279dp"
-        android:layout_height="416dp"
+        android:layout_height="300dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="128dp"
@@ -94,7 +94,7 @@
     <ListView
         android:id="@+id/liquorListView"
         android:layout_width="280dp"
-        android:layout_height="414dp"
+        android:layout_height="300dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="128dp"

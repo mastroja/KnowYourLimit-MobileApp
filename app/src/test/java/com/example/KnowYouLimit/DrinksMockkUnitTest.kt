@@ -2,7 +2,7 @@ package com.example.KnowYouLimit
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
-import com.example.KnowYouLimit.dto.drinks
+import com.example.KnowYouLimit.dto.drinkDTO
 import com.example.KnowYouLimit.service.DrinksService
 import io.mockk.every
 import io.mockk.mockk
@@ -38,20 +38,20 @@ class DrinksMockkUnitTest {
     }
 
     private fun createMockkData() {
-        var allDrinksLiveData = MutableLiveData<ArrayList<drinks>>()
-        var allDrinks = ArrayList<drinks>()
+        var allDrinksLiveData = MutableLiveData<ArrayList<drinkDTO>>()
+        var allDrinks = ArrayList<drinkDTO>()
 
         //mimmick budlight data as if coming in by JSON
-        var budLight = drinks("BudLight", "Beer", "4.9", "12oz")
+        var budLight = drinkDTO("BudLight", "Beer", "4.9", "12oz")
         allDrinks.add(budLight)
-        var wine = drinks("Cabernet", "Wine", "13", "255ml")
+        var wine = drinkDTO("Cabernet", "Wine", "13", "255ml")
         allDrinks.add(wine)
 
         //post that array to our mimmicked live data
         allDrinksLiveData.postValue(allDrinks)
 
         every { drinkService.fetchDrinks(or("BudLight", "Wine"))} returns allDrinksLiveData
-        every {drinkService.fetchDrinks(not(or("BudLight", "Wine")))} returns MutableLiveData<ArrayList<drinks>>()
+        every {drinkService.fetchDrinks(not(or("BudLight", "Wine")))} returns MutableLiveData<ArrayList<drinkDTO>>()
 
         mvm.drinksService = drinkService
     }
