@@ -3,9 +3,8 @@ package com.example.KnowYouLimit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
+import android.view.View
+import android.widget.*
 import com.example.KnowYouLimit.R.id.beerListView
 import com.example.KnowYouLimit.dto.drinkDTO
 
@@ -32,8 +31,19 @@ class BeerActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this,
             R.layout.listview_item, beerArray)
 
-        val listView:ListView = findViewById(R.id.beerListView)
-        listView.setAdapter(adapter)
+        val listView:ListView = findViewById(beerListView)
+        listView.adapter = adapter
+
+//        listView.onItemClickListener =
+//            AdapterView.OnItemClickListener { parent, view, position, id ->
+//                // value of item that is clicked
+//                val itemValue = listView.getItemAtPosition(position) as String
+//
+//                // Toast the values
+//                Toast.makeText(applicationContext,
+//                    "Drink added", Toast.LENGTH_LONG)
+//                    .show()
+//            }
 
         val doneBtn = findViewById<Button>(R.id.doneBtn)
         doneBtn.setOnClickListener {

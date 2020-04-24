@@ -70,43 +70,20 @@
         android:layout_width="415dp"
         android:layout_height="185dp"
         android:layout_marginTop="69dp"
+        android:background="#00EDEBEC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#00EDEBEC" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/beerBtn"
         android:layout_width="420dp"
         android:layout_height="47dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="108dp"
         android:background="#B3EDEBEC"
         android:text="Beer"
         android:textColor="#72490f"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/liquorBtn"
-        android:layout_width="420dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="172dp"
-        android:background="#80EDEBEC"
-        android:text="Liquor"
-        android:textColor="#72490f"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/addDrinkBtn"
-        android:layout_width="420dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="219dp"
-        android:background="#66EDEBEC"
-        android:text="Add Drink"
-        android:textColor="#72490f"
-        android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,11 +91,25 @@
         android:id="@+id/mixedDrinkBtn"
         android:layout_width="420dp"
         android:layout_height="47dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="156dp"
         android:background="#99EDEBEC"
         android:text="Mixed Drink"
         android:textColor="#72490f"
         android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/liquorBtn"
+        android:layout_width="420dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="203dp"
+        android:background="#80EDEBEC"
+        android:text="Liquor"
+        android:textColor="#72490f"
+        android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -420,15 +411,15 @@
         android:id="@+id/beerTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="336dp"
         android:text="Beer"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#1e212b"
         android:textSize="16dp"
-        app:layout_constraintStart_toStartOf="@+id/beerBox2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -521,13 +512,190 @@
         android:layout_marginLeft="28dp"
         android:layout_marginTop="608dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/popupOverlay"
+        android:layout_width="600dp"
+        android:layout_height="1000dp"
+        android:background="#99FFFFFF"
+        android:clickable="true"
+        android:longClickable="false"
+        android:translationZ="9dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <ImageView
+        android:id="@+id/popupArea"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="156dp"
+        android:background="#FFFFFF"
+        android:foregroundGravity="top"
+        android:translationZ="10dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="248dp"
+        android:background="#CC5A595B"
+        android:text="5"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginLeft="276dp"
+        android:layout_marginTop="248dp"
+        android:background="#E65A595B"
+        android:text="8"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="248dp"
+        android:background="#995A595B"
+        android:text="2"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="248dp"
+        android:background="#CC5A595B"
+        android:text="6"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popupTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="188dp"
+        android:text="Rate your level of intoxication"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#1e212b"
+        android:textSize="22sp"
+        android:translationZ="11dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="248dp"
+        android:background="#5A595B"
+        android:text="10"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="248dp"
+        android:background="#E65A595B"
+        android:text="7"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="248dp"
+        android:background="#B35A595B"
+        android:text="4"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="248dp"
+        android:background="#B35A595B"
+        android:text="3"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="248dp"
+        android:background="#995A595B"
+        android:text="1"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBtn9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="248dp"
+        android:background="#5A595B"
+        android:text="9"
+        android:translationZ="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="beerBtn" type="id" />
+    <item name="mixedDrinkBtn" type="id" />
+    <item name="liquorBtn" type="id" />
+    <item name="addDrinkBtn" type="id" />
+    <item name="popupBtn10" type="id" />
+    <item name="popupBtn9" type="id" />
+    <item name="popupBtn8" type="id" />
+    <item name="popupBtn7" type="id" />
+    <item name="popupBtn6" type="id" />
+    <item name="popupBtn5" type="id" />
+    <item name="popupBtn4" type="id" />
+    <item name="popupBtn3" type="id" />
+    <item name="popupBtn2" type="id" />
+    <item name="popupBtn1" type="id" />
+    <item name="popupOverlay" type="id" />
+    <item name="popupArea" type="id" />
+    <item name="popupTxt" type="id" />
+</resources>
