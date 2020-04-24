@@ -165,7 +165,7 @@ class MainActivity : AppCompatActivity() {
                     arrow7.visibility = View.INVISIBLE
                     arrow8.visibility = View.INVISIBLE
                     arrow9.visibility = View.INVISIBLE
-                    arrow10.visibility = View.VISIBLE
+                    arrow10.visibility = View.INVISIBLE
                     popupArea.visibility = View.INVISIBLE
                     popupOverlay.visibility = View.INVISIBLE
                     popupTxt.visibility = View.INVISIBLE
